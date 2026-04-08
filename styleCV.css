@@ -1,0 +1,57 @@
+:root {
+        --color-franja: #051159; /* Color de la franja */
+        --color-texto: #010f53; /* Color del texto */
+        --color-texto-franja: #ffffff; /* Color del texto en la franja */
+    
+    @media (print) /* Aplicar estilos solo al imprimir */ {
+        --page-width: 210mm; /*definir el tamaño para impresión A4*/
+        --page-height: 297mm; /*definir el tamaño para impresión A4*/
+    }
+    @media (max-width: 700px) /* Aplicar estilos solo en pantallas pequeñas */ {
+        --page-width: 100%; /* Ajustar el ancho al 100% en pantallas pequeñas */
+        --page-height: auto; /* Ajustar la altura automáticamente en pantallas pequeñas */
+    }
+    @media (min-width: 701px) /* Aplicar estilos solo en pantallas grandes */ {
+        --page-width: 800px; /* Ancho fijo para pantallas grandes */
+        --page-height: auto; /* Ajustar la altura automáticamente en pantallas grandes */
+    }
+}
+
+
+body {
+  display: flex;
+  font-family: "Arial Black";
+}
+.no-franja { 
+    background-color: #ffffff; 
+    color : #010f53;
+    width: 900px; /* Ancho fijo para el encabezado */
+    margin-left: 30px; /* Margen izquierdo para centrar */
+    
+
+}
+#nombre {
+    font-family: "Arial Black"; /* Fuente en negrita */
+    font-size: 50px; /* Tamaño de fuente más grande para el nombre */
+}
+.franja {
+    background-color: #051159; /* Color de fondo azul oscuro */
+    color:#ffffff; /* Color de texto blanco */
+}
+#foto {
+    margin-left: 30px; /* Margen izquierdo para separar la imagen del borde */
+    margin-right: 30px; /* Margen derecho para separar la imagen del texto */
+    align-items: left; /* Alinear la imagen a la izquierda */
+    
+}
+#contacto {
+    margin-left:30px;
+    
+}
+.main {
+   display: flex;
+  
+}
+#texto {
+    color : #010f53;
+}
